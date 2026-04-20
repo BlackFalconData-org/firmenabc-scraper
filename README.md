@@ -26,20 +26,20 @@ Scrape FirmenABC — Austria's largest business directory with 800,000+ companie
 
 ## Use cases
 
+**B2B lead generation in Austria**
+Build targeted prospect lists of Austrian companies by industry (`Steuerberater`, `IT-Dienstleistungen`, `Rechtsanwalt`, `Bäckerei`…) and federal state. Each record includes phone, email, website, VAT ID, and street address — ready for CRM import.
+
+**Firmenbuch / compliance enrichment**
+Pull Firmenbuchnummer, Rechtsform, board members, and the latest Jahresabschluss balance sheet (total assets, equity, net income, liabilities) for due-diligence, KYC, and credit-risk workflows without scraping the Firmenbuch register directly.
+
+**Market & competitive intelligence**
+Snapshot an entire vertical across all 9 Austrian Bundesländer. Combine with incremental runs to detect new market entrants, name/address changes, or companies that disappear from the directory.
+
 **Data pipeline automation**
-Integrate with your ETL pipeline to collect structured listings from the source on a schedule. Export to CSV, JSON, or directly to your database. Use compact mode to control output size.
-
-**Market research**
-Monitor listings, track trends, and analyze market dynamics with structured, deduplicated data from the source.
-
-**Change monitoring**
-Run daily or hourly in incremental mode to capture only new, updated, or expired listings. Perfect for price-tracking, churn analysis, and alerting pipelines.
-
-**Lead generation**
-Extract employer contact details alongside listings to build outreach lists for recruiters, staffing agencies, or B2B sales teams.
+Integrate with ETL on a schedule — JSON, CSV, Excel, or streamed via the Apify API, webhooks, Make, Zapier, Airbyte, Keboola. Incremental mode keeps recurring runs cheap by emitting only new or changed records.
 
 **AI / LLM training data**
-Structured JSON per listing is ready for RAG pipelines, embeddings, and agent workflows. Compact mode trims tokens for LLM context windows.
+Structured JSON per company is ready for RAG pipelines, embeddings, and agent workflows. Compact mode trims the schema to core contact+identity fields to fit LLM context windows.
 
 ---
 
@@ -149,12 +149,9 @@ No. Just sign up for Apify, paste your input, and click Start. No credit card re
 
 ## Related products by Black Falcon Data
 
-- [StepStone Scraper](https://apify.com/blackfalcondata/stepstone-scraper?fpr=1h3gvi) — Job listings from 18 European portals
-- [Indeed Job Scraper](https://apify.com/blackfalcondata/indeed-job-scraper?fpr=1h3gvi) — Indeed job listings with salary data
-- [Glassdoor Job Scraper](https://apify.com/blackfalcondata/glassdoor-job-scraper?fpr=1h3gvi) — Glassdoor listings with company ratings
-- [Arbeitsagentur Scraper](https://apify.com/blackfalcondata/arbeitsagentur-scraper?fpr=1h3gvi) — Germany's official job portal (1M+ listings)
-- [SEEK Scraper](https://apify.com/blackfalcondata/seek-scraper?fpr=1h3gvi) — Australia & NZ's largest job board
-- [Naukri Scraper](https://apify.com/blackfalcondata/naukri-scraper?fpr=1h3gvi) — India's largest job portal
+- [WLW Scraper](https://apify.com/blackfalcondata/wlw-scraper?fpr=1h3gvi) — DACH B2B supplier directory (Germany / Austria / Switzerland)
+- [StepStone.de Scraper](https://apify.com/blackfalcondata/stepstone-de-scraper?fpr=1h3gvi) — Germany's largest job portal (often used alongside AT directory data)
+- [Arbeitsagentur Scraper](https://apify.com/blackfalcondata/arbeitsagentur-scraper?fpr=1h3gvi) — Germany's official Bundesagentur job portal (1M+ listings)
 
 ---
 
